@@ -53,7 +53,31 @@ Function Main {
   $textFont = "./NotoSans-Regular.ttf" | Get-ChildItem | ForEach-Object { $_.FullName }
   $iconFont = "./MaterialDesignIconsDesktop.ttf" | Get-ChildItem | ForEach-Object { $_.FullName }
 
+  $textFontSize = 6
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 1
+  $iconVerticalOffset = 1
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 10
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 1
+  $iconVerticalOffset = 2
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 15
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 1
+  $iconVerticalOffset = 3
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
   $textFontSize = 24
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 2
+  $iconVerticalOffset = 6
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 25
   $textVerticalOffset = 0
   $iconFontSizeOffset = 2
   $iconVerticalOffset = 6
