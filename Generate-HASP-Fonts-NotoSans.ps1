@@ -51,68 +51,68 @@ Function Main {
 
   $outfile = "output" | Resolve-Path | ForEach-Object { $_.Path }
   $textFont = "./NotoSans-Regular.ttf" | Get-ChildItem | ForEach-Object { $_.FullName }
-  $iconFont = "./MaterialDesignIconsDesktop.ttf" | Get-ChildItem | ForEach-Object { $_.FullName }
-
-  $textFontSize = 6
-  $textVerticalOffset = 0
-  $iconFontSizeOffset = 1
-  $iconVerticalOffset = 1
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
-
-  $textFontSize = 10
-  $textVerticalOffset = 0
-  $iconFontSizeOffset = 1
-  $iconVerticalOffset = 2
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
-
-  $textFontSize = 15
-  $textVerticalOffset = 0
-  $iconFontSizeOffset = 1
-  $iconVerticalOffset = 3
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
-
-  $textFontSize = 24
-  $textVerticalOffset = 0
-  $iconFontSizeOffset = 2
-  $iconVerticalOffset = 6
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
-
-  $textFontSize = 25
-  $textVerticalOffset = 0
-  $iconFontSizeOffset = 2
-  $iconVerticalOffset = 6
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
-
-  $textFontSize = 32
-  $textVerticalOffset = 0
-  $iconFontSizeOffset = 4
-  $iconVerticalOffset = 4
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+  $iconFont = "./MaterialDesignIconsDesktop-7.4.47.ttf" | Get-ChildItem | ForEach-Object { $_.FullName }
 
   $textFontSize = 48
   $textVerticalOffset = 0
   $iconFontSizeOffset = 8
   $iconVerticalOffset = 4
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 32
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 4
+  $iconVerticalOffset = 4
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 24
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 2
+  $iconVerticalOffset = 6
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 6
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 1
+  $iconVerticalOffset = 1
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 10
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 1
+  $iconVerticalOffset = 2
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 15
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 1
+  $iconVerticalOffset = 3
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+
+  $textFontSize = 25
+  $textVerticalOffset = 0
+  $iconFontSizeOffset = 2
+  $iconVerticalOffset = 6
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
 
   $textFontSize = 64
   $textVerticalOffset = 0
   $iconFontSizeOffset = 8
   $iconVerticalOffset = 4
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
 
   $textFontSize = 80
   $textVerticalOffset = -12
   $iconFontSizeOffset = 8
   $iconVerticalOffset = 0
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
 
   $textFont = "./NotoSans-Bold.ttf" | Get-ChildItem | ForEach-Object { $_.FullName }
   $textFontSize = 80
   $textVerticalOffset = -12
   $iconFontSizeOffset = 8
   $iconVerticalOffset = 0
-  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1af0 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
+  New-ZiFontV5 -textFont $textFont -iconFont $iconFont -iconFontFirstCP 0xf0001 -iconFontLastCP 0xf1d17 -iconCPOffset 0xE2001 -iconVerticalOffset $iconVerticalOffset -textVerticalOffset $textVerticalOffset -textFontSize $textFontSize -iconFontSizeOffset $iconFontSizeOffset -Codepage $codePage -Path $outfile
 
   $textFont = "$($Env:windir)\Fonts\Consola.ttf"
   $textFontSize = 24
